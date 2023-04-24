@@ -1,9 +1,7 @@
 
-
-
 -- configs definition
 
-CREATE TABLE `configs` (
+CREATE TABLE `epiz_33497254_discovery`.`configs` (
   `config_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(80) NOT NULL,
   `content` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
@@ -35,7 +33,7 @@ VALUES('DEFAULT_TEMPLATE', '/home/douglas/www/imwvg/src/templates.php', 'yes', '
 
 -- menus definition
 
-CREATE TABLE `menus` (
+CREATE TABLE `epiz_33497254_discovery`.`menus` (
   `menu_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `sequence_id` int DEFAULT NULL,
@@ -50,7 +48,7 @@ CREATE TABLE `menus` (
 
 -- papers definition
 
-CREATE TABLE `papers` (
+CREATE TABLE `epiz_33497254_discovery`.`papers` (
   `paper_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
@@ -63,7 +61,7 @@ CREATE TABLE `papers` (
 
 -- permissions definition
 
-CREATE TABLE `permissions` (
+CREATE TABLE `epiz_33497254_discovery`.`permissions` (
   `permission_id` int unsigned NOT NULL AUTO_INCREMENT,
   `permission_type_id` int unsigned NOT NULL DEFAULT '1',
   `paper_id` int unsigned NOT NULL,
@@ -81,7 +79,7 @@ CREATE TABLE `permissions` (
 
 -- permissions_types definition
 
-CREATE TABLE `permissions_types` (
+CREATE TABLE `epiz_33497254_discovery`.`permissions_types` (
   `permission_type_id` int unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(25) NOT NULL,
   `active` enum('yes','no') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'yes',
@@ -93,22 +91,18 @@ CREATE TABLE `permissions_types` (
 
 -- users definition
 
-CREATE TABLE `users` (
+-- discovery.users definition
+
+CREATE TABLE `epiz_33497254_discovery`.`users` (
   `user_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `paper_id` bigint unsigned NOT NULL,
   `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `document` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `password` varchar(255) NOT NULL,
-  `birthday` date NOT NULL,
-  `genre` enum('male','famale') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT 'male',
-  `school` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `office` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `image` varchar(255) DEFAULT NULL,
   `active` enum('yes','no') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'yes',
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   `removed` bigint unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-

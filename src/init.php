@@ -12,7 +12,7 @@ use douggonsouza\request\usages;
 use douggonsouza\mvc\model\configs;
 
 // conexão com o banco
-conn::connection('localhost','douggonsouza','Ds@468677','discovery');
+conn::connection('localhost','douggonsouza','Ds@468677','epiz_33497254_discovery');
 // conn::connection('sql204.epizy.com','epiz_33497254','VKbVYbrgDkJ','epiz_33497254_discovery');
 
 // constantes globais
@@ -23,8 +23,7 @@ include(configs::get('DEFAULT_TEMPLATE'));
 
 // Adiciona routings
 routings::add('default', configs::get('routings'));
-routings::add('/admin/',__DIR__ . '/routing.php');
-routings::add('/api/'  ,__DIR__ . '/routing.php');
+routings::add('/admin/', configs::get('routings'));
 
 // adiciona configurações blocos benchmarck
 $benchmarck = new benchmarck(new language(array('pt-br' => configs::get('DEFAULT_LANGUAGE'))));

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "140075b7fea3a7e1b08f285196c89bd4",
+    "content-hash": "37b10d36d046a708e37b0573e622c3e0",
     "packages": [
         {
             "name": "douggonsouza/downloads",
@@ -119,16 +119,16 @@
         },
         {
             "name": "douggonsouza/genpermissions",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/douggonsouza/genpermissions.git",
-                "reference": "8fb823ba9ab4eff89fea1bec6f5cd18bb50b4af9"
+                "reference": "b7905afa8a055b999573c1a1d60989fc5dd83043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/douggonsouza/genpermissions/zipball/8fb823ba9ab4eff89fea1bec6f5cd18bb50b4af9",
-                "reference": "8fb823ba9ab4eff89fea1bec6f5cd18bb50b4af9",
+                "url": "https://api.github.com/repos/douggonsouza/genpermissions/zipball/b7905afa8a055b999573c1a1d60989fc5dd83043",
+                "reference": "b7905afa8a055b999573c1a1d60989fc5dd83043",
                 "shasum": ""
             },
             "type": "library",
@@ -150,22 +150,22 @@
             "description": "MVC de permissões para o template Gentelela",
             "support": {
                 "issues": "https://github.com/douggonsouza/genpermissions/issues",
-                "source": "https://github.com/douggonsouza/genpermissions/tree/1.0.2"
+                "source": "https://github.com/douggonsouza/genpermissions/tree/1.0.3"
             },
-            "time": "2023-04-07T23:41:57+00:00"
+            "time": "2023-04-24T11:38:39+00:00"
         },
         {
             "name": "douggonsouza/gentelela",
-            "version": "1.0.12",
+            "version": "1.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/douggonsouza/gentelela.git",
-                "reference": "b940027b9d0aa3423e2cbc26e212904c58a5ee77"
+                "reference": "bf63761c811086b897b2d13814b852e3cc7795b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/douggonsouza/gentelela/zipball/b940027b9d0aa3423e2cbc26e212904c58a5ee77",
-                "reference": "b940027b9d0aa3423e2cbc26e212904c58a5ee77",
+                "url": "https://api.github.com/repos/douggonsouza/gentelela/zipball/bf63761c811086b897b2d13814b852e3cc7795b9",
+                "reference": "bf63761c811086b897b2d13814b852e3cc7795b9",
                 "shasum": ""
             },
             "require": {
@@ -193,9 +193,9 @@
             "description": "Benchmarck para o template Gentelela",
             "support": {
                 "issues": "https://github.com/douggonsouza/gentelela/issues",
-                "source": "https://github.com/douggonsouza/gentelela/tree/1.0.12"
+                "source": "https://github.com/douggonsouza/gentelela/tree/1.0.13"
             },
-            "time": "2023-04-15T14:26:56+00:00"
+            "time": "2023-04-24T11:47:57+00:00"
         },
         {
             "name": "douggonsouza/html",
@@ -421,16 +421,16 @@
         },
         {
             "name": "douggonsouza/request",
-            "version": "v1.0.11",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/douggonsouza/request.git",
-                "reference": "70e0f6d6c9f3c86a681036a7fb2991f7184d3d82"
+                "reference": "fe7f5c9bee0a0bf9b4737769fcb19a3a02f498c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/douggonsouza/request/zipball/70e0f6d6c9f3c86a681036a7fb2991f7184d3d82",
-                "reference": "70e0f6d6c9f3c86a681036a7fb2991f7184d3d82",
+                "url": "https://api.github.com/repos/douggonsouza/request/zipball/fe7f5c9bee0a0bf9b4737769fcb19a3a02f498c5",
+                "reference": "fe7f5c9bee0a0bf9b4737769fcb19a3a02f498c5",
                 "shasum": ""
             },
             "require": {
@@ -456,9 +456,9 @@
             "description": "Tratamento da requisição e coleta de parâmetros para o roteamento",
             "support": {
                 "issues": "https://github.com/douggonsouza/request/issues",
-                "source": "https://github.com/douggonsouza/request/tree/v1.0.11"
+                "source": "https://github.com/douggonsouza/request/tree/v1.0.12"
             },
-            "time": "2023-03-10T11:30:06+00:00"
+            "time": "2023-04-24T11:40:03+00:00"
         },
         {
             "name": "douggonsouza/routes",

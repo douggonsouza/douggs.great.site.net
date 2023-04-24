@@ -30,7 +30,6 @@ class login extends controllers implements controllersInterface
                 router::setAlert('Erro no login do usuário.', benchmarck::BADGE_DANGER);
             };
 
-            router::setAlert('Usuário registrado com sucesso.');
             return router::redirect("/admin/dashboard", $info);
         }
 
